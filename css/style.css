@@ -198,3 +198,52 @@ footer small{color:#aaa}
 @media(max-width:800px){
   .home-photo-large img{filter:grayscale(100%)}
 }
+
+
+/* Бокова навігація з кнопкою-трьома крапками */
+.bar{gap:16px}
+.bar nav{display:none!important}
+#sections-toggle{
+  width:46px;height:42px;padding:0;margin-left:2px;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  gap:4px;background:var(--paper);border:1px solid var(--ink);border-radius:0;
+  cursor:pointer;flex:0 0 auto;
+}
+#sections-toggle span{display:block;width:4px;height:4px;border-radius:50%;background:var(--ink)}
+.sections-backdrop{
+  position:fixed;inset:0;background:rgba(0,0,0,.48);z-index:1000;
+  opacity:0;visibility:hidden;transition:opacity .25s,visibility .25s;
+}
+.sections-backdrop.is-visible{opacity:1;visibility:visible}
+.sections-drawer{
+  position:fixed;z-index:1001;top:0;right:0;width:min(390px,88vw);height:100dvh;
+  background:var(--paper);color:var(--ink);border-left:1px solid var(--line);
+  transform:translateX(102%);transition:transform .28s ease;
+  display:flex;flex-direction:column;box-shadow:-18px 0 55px rgba(0,0,0,.12);
+}
+.sections-drawer.is-open{transform:translateX(0)}
+.sections-drawer-head{
+  min-height:88px;padding:20px 24px;border-bottom:1px solid var(--line);
+  display:flex;align-items:center;justify-content:space-between;gap:15px;
+}
+.sections-drawer-head b{display:block;font-size:22px;letter-spacing:2px}
+.sections-drawer-head small{display:block;margin-top:4px;font-size:9px;letter-spacing:2.5px;color:var(--muted)}
+.sections-close{width:38px;height:38px;padding:0;font-size:27px;line-height:1;border:1px solid var(--line);background:transparent;color:var(--ink);border-radius:0}
+.sections-drawer-nav{
+  display:flex!important;flex-direction:column;gap:0;overflow-y:auto;flex:1;
+  padding:10px 24px 30px;
+}
+.sections-drawer-nav a{
+  display:block;padding:13px 2px;border-bottom:1px solid var(--line);
+  color:var(--ink);font-size:14px;white-space:normal;
+  transition:padding-left .18s,color .18s;
+}
+.sections-drawer-nav a:hover{padding-left:9px;color:var(--muted)}
+body.menu-open{overflow:hidden}
+@media(max-width:600px){
+ .bar{display:flex;flex-wrap:nowrap;gap:9px;padding:10px 4%}
+ .bar .brand{flex:1}
+ .bar .search{width:min(42vw,170px);padding:8px 9px;font-size:12px}
+ #theme{padding:8px 9px;font-size:11px}
+ #sections-toggle{width:40px;height:39px}
+}
