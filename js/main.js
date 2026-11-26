@@ -167,55 +167,6 @@ if($("#map")&&window.L){
  [[50.452,30.516,"Софія Київська"],[50.434,30.557,"Києво-Печерська лавра"],[50.459,30.518,"Андріївський узвіз"],[50.447,30.523,"Майдан Незалежності"]].forEach(p=>L.marker([p[0],p[1]]).addTo(map).bindPopup(p[2]));
 }
 
-/* Бокове меню розділів: відкривається кнопкою з трьома крапками */
-const headerNav=$(".bar nav");
-const headerBar=$(".bar");
-if(headerNav&&headerBar){
- const toggle=$("#sections-toggle")||document.createElement("button");
- toggle.id="sections-toggle";
- toggle.type="button";
- toggle.className="sections-toggle";
- toggle.setAttribute("aria-label","Відкрити розділи");
- toggle.setAttribute("aria-expanded","false");
- toggle.innerHTML='<span></span><span></span><span></span>'; toggle.style.cssText="display:flex!important;flex-direction:column;align-items:center;justify-content:center;gap:4px;width:46px;height:42px;min-width:46px;background:#fff;border:1px solid #111;border-radius:0;cursor:pointer;position:relative;z-index:20"; toggle.querySelectorAll("span").forEach(dot=>dot.style.cssText="display:block!important;width:5px;height:5px;min-height:5px;border-radius:50%;background:#111");
- toggle.title="Розділи сайту";
- const backdrop=document.createElement("div");
- backdrop.className="sections-backdrop";
- backdrop.id="sections-backdrop";
- const drawer=document.createElement("aside");
- drawer.className="sections-drawer";
- drawer.id="sections-drawer";
- drawer.setAttribute("aria-label","Розділи сайту");
- const drawerHead=document.createElement("div");
- drawerHead.className="sections-drawer-head";
- drawerHead.innerHTML='<div><b>KYIV</b><small>DIGITAL CITY · РОЗДІЛИ</small></div><button type="button" class="sections-close" aria-label="Закрити меню">×</button>';
- const drawerNav=headerNav.cloneNode(true);
- drawerNav.className="sections-drawer-nav";
- drawer.append(drawerHead,drawerNav);
- headerNav.replaceWith(document.createComment("Навігація перенесена в бокове меню"));
- const searchBox=$("#search");
- if(searchBox) searchBox.insertAdjacentElement("afterend",toggle);
- else headerBar.append(toggle);
- document.body.append(backdrop,drawer);
- const closeMenu=()=>{
-   drawer.classList.remove("is-open");
-   backdrop.classList.remove("is-visible");
-   toggle.setAttribute("aria-expanded","false");
-   document.body.classList.remove("menu-open");
- };
- const openMenu=()=>{
-   drawer.classList.add("is-open");
-   backdrop.classList.add("is-visible");
-   toggle.setAttribute("aria-expanded","true");
-   document.body.classList.add("menu-open");
- };
- toggle.addEventListener("click",()=>drawer.classList.contains("is-open")?closeMenu():openMenu());
- backdrop.addEventListener("click",closeMenu);
- drawerHead.querySelector(".sections-close").addEventListener("click",closeMenu);
- drawerNav.addEventListener("click",e=>{if(e.target.closest("a"))closeMenu()});
- document.addEventListener("keydown",e=>{if(e.key==="Escape")closeMenu()});
-}
-
 const themeButton=$("#theme");
 const stored=localStorage.getItem("kyiv-theme");
 document.documentElement.dataset.theme=stored||"light";
