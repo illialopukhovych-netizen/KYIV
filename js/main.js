@@ -5,7 +5,7 @@ if (!app) return;
 const page = app.dataset.page || "index";
 const P = window.KYIV_PAGES || {};
 const D = window.KYIV_DISTRICTS || [];
-const photo = "https://upload.wikimedia.org/wikipedia/commons/3/39/PaKyiv1%28Panorama%29.jpg";
+const photo = "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/39/PaKyiv1%28Panorama%29.jpg/1280px-PaKyiv1%28Panorama%29.jpg";
 const photoSource = "https://commons.wikimedia.org/wiki/File:PaKyiv1(Panorama).jpg";
 const details = {
 history: [
@@ -114,8 +114,8 @@ sources: [
 };
 const gallery = [
 {src:photo,title:"Софійська площа",caption:"Панорама Софійської площі та дзвіниці",credit:"Фото: GAK81 · CC BY-SA 4.0",url:"https://commons.wikimedia.org/wiki/File:PaKyiv1(Panorama).jpg"},
-{src:"https://upload.wikimedia.org/wikipedia/commons/5/56/Khreshchatyk.jpg",title:"Вулиця Хрещатик",caption:"Вид на головну вулицю столиці",credit:"Фото: Київська міська рада · CC BY 4.0",url:"https://commons.wikimedia.org/wiki/File:Khreshchatyk.jpg"},
-{src:"https://upload.wikimedia.org/wikipedia/commons/c/c4/Dnieper_in_Kyiv.jpg",title:"Дніпро та панорама міста",caption:"Вид на Дніпро з оглядового майданчика",credit:"Фото: Skelanard · CC BY-SA 4.0",url:"https://commons.wikimedia.org/wiki/File:Dnieper_in_Kyiv.jpg"}
+{src:"https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/Khreshchatyk.jpg/1280px-Khreshchatyk.jpg",title:"Вулиця Хрещатик",caption:"Вид на головну вулицю столиці",credit:"Фото: Київська міська рада · CC BY 4.0",url:"https://commons.wikimedia.org/wiki/File:Khreshchatyk.jpg"},
+{src:"https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/Dnieper_in_Kyiv.jpg/1280px-Dnieper_in_Kyiv.jpg",title:"Дніпро та панорама міста",caption:"Вид на Дніпро з оглядового майданчика",credit:"Фото: Skelanard · CC BY-SA 4.0",url:"https://commons.wikimedia.org/wiki/File:Dnieper_in_Kyiv.jpg"}
 ];
 const safe = (s) => String(s).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const nav = [["index","Головна"],...Object.entries(P).map(([k,v])=>[k,v[0]])];
