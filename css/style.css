@@ -52,7 +52,7 @@
 
 
 /* KYIV DIGITAL CITY — editorial home and long-form reading */
-.home-hero{min-height:min(780px,86vh);position:relative;display:flex;align-items:center;padding:100px max(7%,calc((100vw - 1240px)/2));color:#fff;background-image:url("https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/The_sky_over_Kyiv.jpg/1920px-The_sky_over_Kyiv.jpg");background-size:cover;background-position:center 46%;isolation:isolate}
+.home-hero{min-height:min(780px,86vh);position:relative;display:flex;align-items:center;padding:100px max(7%,calc((100vw - 1240px)/2));color:#fff;background-image:url("https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d4/The_sky_over_Kyiv.jpg/1920px-The_sky_over_Kyiv.jpg");background-size:cover;background-position:center 46%;isolation:isolate}
 .home-hero-shade{position:absolute;inset:0;background:linear-gradient(90deg,rgba(7,25,19,.91) 0%,rgba(7,25,19,.67) 48%,rgba(7,25,19,.12) 100%);z-index:-1}
 .home-hero-content{max-width:790px;position:relative}
 .hero-kicker{font-size:11px;letter-spacing:3px;font-weight:800;color:#e1c58e}
