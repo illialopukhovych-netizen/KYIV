@@ -268,3 +268,51 @@ body.menu-open{overflow:hidden}
  .bar #theme{order:2}
  .bar nav{order:3;flex:1 1 100%;width:100%;padding-bottom:5px}
 }
+
+
+/* FINAL HEADER LAYOUT — brand, search on the left, section links on the right */
+.bar{
+  position:sticky;top:0;z-index:50;
+  display:flex!important;flex-wrap:nowrap!important;
+  align-items:center!important;gap:18px!important;
+  min-height:76px;padding:12px 4%!important;
+  overflow:visible;
+}
+.bar>.brand{order:0!important;flex:0 0 104px!important}
+.bar>.search{
+  order:1!important;flex:0 0 190px!important;
+  width:190px!important;min-width:190px!important;
+  height:42px;margin:0!important;padding:0 14px!important;
+  border:1px solid #bdbdbd!important;border-radius:0!important;
+  background:#fff!important;color:#111!important;
+}
+.bar>nav{
+  order:2!important;display:flex!important;flex:1 1 auto!important;
+  min-width:0!important;width:auto!important;max-width:none!important;
+  flex-wrap:nowrap!important;gap:17px!important;
+  overflow-x:auto!important;overflow-y:hidden!important;
+  white-space:nowrap!important;padding:5px 0!important;
+  scrollbar-width:thin;scrollbar-color:#888 transparent;
+}
+.bar>nav a{flex:0 0 auto!important;font-size:12px!important;color:#555!important}
+.bar>nav a:hover{color:#111!important}
+.bar>#theme{
+  order:3!important;flex:0 0 auto!important;
+  height:42px;padding:0 14px!important;
+  border:1px solid #111!important;border-radius:0!important;
+  background:#fff!important;color:#111!important;
+}
+#sections-toggle,.sections-backdrop,.sections-drawer{display:none!important}
+@media(max-width:1050px){
+ .bar{gap:12px!important;padding-left:3%!important;padding-right:3%!important}
+ .bar>.brand{flex-basis:90px!important}
+ .bar>.search{flex-basis:155px!important;width:155px!important;min-width:155px!important}
+ .bar>nav{gap:12px!important}
+}
+@media(max-width:700px){
+ .bar{display:grid!important;grid-template-columns:auto minmax(120px,1fr) auto!important;gap:10px!important}
+ .bar>.brand{grid-column:1;grid-row:1}
+ .bar>.search{grid-column:2;grid-row:1;width:100%!important;min-width:0!important}
+ .bar>#theme{grid-column:3;grid-row:1;padding:0 9px!important}
+ .bar>nav{grid-column:1/-1;grid-row:2;width:100%!important}
+}
