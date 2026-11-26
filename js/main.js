@@ -170,8 +170,8 @@ if($("#map")&&window.L){
 /* Бокове меню розділів: відкривається кнопкою з трьома крапками */
 const headerNav=$(".bar nav");
 const headerBar=$(".bar");
-if(headerNav&&headerBar&&!$("#sections-toggle")){
- const toggle=document.createElement("button");
+if(headerNav&&headerBar){
+ const toggle=$("#sections-toggle")||document.createElement("button");
  toggle.id="sections-toggle";
  toggle.type="button";
  toggle.className="sections-toggle";
