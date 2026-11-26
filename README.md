@@ -30,3 +30,9 @@
 - Дніпро в Києві — Skelanard, Wikimedia Commons, CC BY-SA 4.0: https://commons.wikimedia.org/wiki/File:Dnieper_in_Kyiv.jpg
 
 Перед повторним використанням зображень перевіряйте сторінку файлу та актуальні умови ліцензії.
+
+
+## Нові фотографії головної сторінки
+- Труханів острів і Дніпро — Daniel Kraft, Wikimedia Commons, CC BY-SA 3.0: https://commons.wikimedia.org/wiki/File:Kiev_Trukhaniv_Island_Panorama.jpg
+- The sky over Kyiv — Francisco Anzola, Wikimedia Commons, CC BY 2.0: https://commons.wikimedia.org/wiki/File:The_sky_over_Kyiv.jpg
+- Київські пагорби та Дніпро — Віктор Полянко, Wikimedia Commons, CC BY-SA 4.0: https://commons.wikimedia.org/wiki/File:Kyiv_-_Landscape_with_Dnipro.jpg
