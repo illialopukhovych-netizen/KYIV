@@ -113,9 +113,9 @@ sources: [
 ]
 };
 const gallery = [
-{src:"https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/Kiev_Trukhaniv_Island_Panorama.jpg/1920px-Kiev_Trukhaniv_Island_Panorama.jpg",title:"Труханів острів і Дніпро",caption:"Широка панорама річки та зелених берегів столиці",credit:"Daniel Kraft · CC BY-SA 3.0",url:"https://commons.wikimedia.org/wiki/File:Kiev_Trukhaniv_Island_Panorama.jpg"},
-{src:"https://thumb.wikimedia.org/wikipedia/commons/thumb/3/39/The_sky_over_Kyiv.jpg/1600px-The_sky_over_Kyiv.jpg",title:"Небо над Києвом",caption:"Міський краєвид у природному світлі",credit:"Francisco Anzola · CC BY 2.0",url:"https://commons.wikimedia.org/wiki/File:The_sky_over_Kyiv.jpg"},
-{src:"https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/Kyiv_-_Landscape_with_Dnipro.jpg/1400px-Kyiv_-_Landscape_with_Dnipro.jpg",title:"Київські пагорби та Дніпро",caption:"Історичний ландшафт долини Дніпра",credit:"Віктор Полянко · CC BY-SA 4.0",url:"https://commons.wikimedia.org/wiki/File:Kyiv_-_Landscape_with_Dnipro.jpg"}
+{src:"https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/Kiev_Trukhaniv_Island_Panorama.jpg/1920px-Kiev_Trukhaniv_Island_Panorama.jpg",title:"Труханів острів і Дніпро",caption:"Широка панорама річки та зелених берегів столиці",credit:"Daniel Kraft · CC BY-SA 3.0",url:"https://commons.wikimedia.org/wiki/File:Kiev_Trukhaniv_Island_Panorama.jpg"},
+{src:"https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/The_sky_over_Kyiv.jpg/1600px-The_sky_over_Kyiv.jpg",title:"Небо над Києвом",caption:"Міський краєвид у природному світлі",credit:"Francisco Anzola · CC BY 2.0",url:"https://commons.wikimedia.org/wiki/File:The_sky_over_Kyiv.jpg"},
+{src:"https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/Kyiv_-_Landscape_with_Dnipro.jpg/1400px-Kyiv_-_Landscape_with_Dnipro.jpg",title:"Київські пагорби та Дніпро",caption:"Історичний ландшафт долини Дніпра",credit:"Віктор Полянко · CC BY-SA 4.0",url:"https://commons.wikimedia.org/wiki/File:Kyiv_-_Landscape_with_Dnipro.jpg"}
 ];
 const safe = (s) => String(s).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const nav = [["index","Головна"],...Object.entries(P).map(([k,v])=>[k,v[0]])];
