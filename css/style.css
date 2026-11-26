@@ -247,3 +247,24 @@ body.menu-open{overflow:hidden}
  #theme{padding:8px 9px;font-size:11px}
  #sections-toggle{width:40px;height:39px}
 }
+
+
+/* HEADER: пошук ліворуч, навігація праворуч */
+.bar{display:flex;align-items:center;gap:16px;flex-wrap:nowrap}
+.bar .brand{order:0;flex:0 0 auto}
+.bar .search{order:1;flex:0 0 190px;width:190px;min-width:150px;margin:0}
+.bar nav{order:2;display:flex!important;flex:1 1 auto;min-width:0;overflow-x:auto;white-space:nowrap;gap:16px;scrollbar-width:thin}
+.bar #theme{order:3;flex:0 0 auto}
+#sections-toggle,.sections-backdrop,.sections-drawer{display:none!important}
+@media(max-width:900px){
+ .bar{gap:10px}
+ .bar .search{flex-basis:155px;width:155px;min-width:125px}
+ .bar nav{gap:12px}
+}
+@media(max-width:650px){
+ .bar{flex-wrap:wrap;padding:10px 4%}
+ .bar .brand{order:0}
+ .bar .search{order:1;flex:1 1 160px;width:auto}
+ .bar #theme{order:2}
+ .bar nav{order:3;flex:1 1 100%;width:100%;padding-bottom:5px}
+}
