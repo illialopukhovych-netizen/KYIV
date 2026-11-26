@@ -127,3 +127,74 @@
  .photo-card img{height:245px}
  .long-read p{font-size:15px}
 }
+
+
+/* KYIV — MINIMAL BLACK & WHITE EDITION */
+:root{
+  --bg:#ffffff;
+  --paper:#ffffff;
+  --ink:#111111;
+  --muted:#666666;
+  --gold:#111111;
+  --accent:#111111;
+  --soft:#f4f4f4;
+  --line:#dedede;
+}
+[data-theme=dark]{
+  --bg:#101010;
+  --paper:#181818;
+  --ink:#f5f5f5;
+  --muted:#aaaaaa;
+  --gold:#ffffff;
+  --accent:#ffffff;
+  --soft:#222222;
+  --line:#363636;
+}
+body{font-family:Arial,Helvetica,sans-serif;letter-spacing:-.12px}
+.bar{background:var(--paper);border-bottom:1px solid var(--line);box-shadow:none}
+.brand{letter-spacing:2px}
+.brand small{letter-spacing:3.5px}
+nav a{color:var(--muted);transition:color .2s}
+nav a:hover{color:var(--ink)}
+button,.search{border-radius:0;background:var(--paper);border-color:var(--ink)}
+.hero,.pagehero{background-color:#111!important;background-image:linear-gradient(90deg,rgba(0,0,0,.78),rgba(0,0,0,.28)),var(--hero-image)!important}
+.pagehero{background:#111!important}
+.tag,.eyebrow,.intro-label,.hero-kicker,.feature-card>span,.detail-index,.timeline article b,.district-number{color:var(--ink)!important}
+.btn,.home-button{background:#111;color:#fff;border:1px solid #111;border-radius:0;box-shadow:none}
+.btn-outline{background:transparent;color:#fff;border:1px solid #fff}
+.home-link,.text-arrow{color:inherit;border-color:currentColor}
+.home-hero{background-color:#111;color:#fff}
+.home-hero-shade{background:linear-gradient(90deg,rgba(0,0,0,.88),rgba(0,0,0,.36))}
+.home-hero h1 em{color:#fff;text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:9px}
+.hero-kicker{color:#fff!important}
+.home-photo-feature{background:#111;color:#fff}
+.home-photo-text .intro-label{color:#fff!important}
+.home-photo-text p{color:#d0d0d0}
+.home-photo-text .text-arrow{color:#fff;border-color:#fff}
+.home-fact{border-left:1px solid var(--ink)}
+.home-fact strong{color:var(--ink)}
+.home-editorial-band{background:#f1f1f1;color:#111}
+.home-editorial-band .eyebrow{color:#111}
+.home-editorial-band p{color:#555}
+.card,.panel,.stat,.photo-card,.district-card,.intro-panel,.feature-card{
+  border-radius:0;box-shadow:none;border:1px solid var(--line)
+}
+.card:hover,.feature-card:hover{transform:translateY(-2px);border-color:var(--ink)}
+.photo-card img{filter:grayscale(100%);transition:filter .35s,transform .45s}
+.photo-card:hover img{filter:grayscale(0%)}
+.home-photo-large img{filter:grayscale(100%)}
+.home-photo-large:hover img{filter:grayscale(0%)}
+.photo-card figcaption small a,.source-list a{text-decoration-thickness:1px}
+.note,.detail-note,.long-read{background:var(--soft);border-radius:0;border-left:2px solid var(--ink)}
+.long-read p{color:var(--ink)}
+.timeline{border-left-color:var(--ink)}
+.timeline article:before{background:var(--ink)}
+.district-card{background:var(--paper)}
+.pagehero:after{color:#ffffff0b}
+#map{border-radius:0;filter:grayscale(100%)}
+footer{background:#111;color:#fff}
+footer small{color:#aaa}
+#top{background:#111;color:#fff;border:1px solid #fff;border-radius:0}
+@media(max-width:800px){
+  .home-photo-large img{filter:grayscale(100%)}
+}
