@@ -113,9 +113,9 @@ sources: [
 ]
 };
 const gallery = [
-{src:photo,title:"Софійська площа",caption:"Панорама історичного центру Києва",credit:"Wikimedia Commons",url:photoSource},
-{src:"https://www.ufl.ua/images/content/dostoprymechatelnosti_Kieva.jpg",title:"Архітектурні символи",caption:"Добірка відомих пам'яток столиці",credit:"UFL — фотоогляд Києва",url:"https://www.ufl.ua/flowers/orygynalnye-statui-kieva"},
-{src:"https://naurok.com.ua/uploads/files/5702809/500158/559735_images/20.jpg",title:"Київські святині",caption:"Софійський собор і Києво-Печерська лавра",credit:"Навчальний фотоогляд",url:"https://naurok.com.ua/kyiv-onlayn---urok-dlya-provedennya-pid-chas-navchannya-v-zmishanomu-abo-distanciynomu-formati-234948.html"}
+{src:photo,title:"Софійська площа",caption:"Панорама Софійської площі та дзвіниці",credit:"Фото: GAK81 · CC BY-SA 4.0",url:"https://commons.wikimedia.org/wiki/File:PaKyiv1(Panorama).jpg"},
+{src:"https://upload.wikimedia.org/wikipedia/commons/5/56/Khreshchatyk.jpg",title:"Вулиця Хрещатик",caption:"Вид на головну вулицю столиці",credit:"Фото: Київська міська рада · CC BY 4.0",url:"https://commons.wikimedia.org/wiki/File:Khreshchatyk.jpg"},
+{src:"https://upload.wikimedia.org/wikipedia/commons/c/c4/Dnieper_in_Kyiv.jpg",title:"Дніпро та панорама міста",caption:"Вид на Дніпро з оглядового майданчика",credit:"Фото: Skelanard · CC BY-SA 4.0",url:"https://commons.wikimedia.org/wiki/File:Dnieper_in_Kyiv.jpg"}
 ];
 const safe = (s) => String(s).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const nav = [["index","Головна"],...Object.entries(P).map(([k,v])=>[k,v[0]])];
