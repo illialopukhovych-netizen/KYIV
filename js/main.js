@@ -177,7 +177,7 @@ if(headerNav&&headerBar&&!$("#sections-toggle")){
  toggle.className="sections-toggle";
  toggle.setAttribute("aria-label","Відкрити розділи");
  toggle.setAttribute("aria-expanded","false");
- toggle.innerHTML='<span></span><span></span><span></span>';
+ toggle.innerHTML='<span></span><span></span><span></span>'; toggle.style.cssText="display:flex!important;flex-direction:column;align-items:center;justify-content:center;gap:4px;width:46px;height:42px;min-width:46px;background:#fff;border:1px solid #111;border-radius:0;cursor:pointer;position:relative;z-index:20"; toggle.querySelectorAll("span").forEach(dot=>dot.style.cssText="display:block!important;width:5px;height:5px;min-height:5px;border-radius:50%;background:#111");
  toggle.title="Розділи сайту";
  const backdrop=document.createElement("div");
  backdrop.className="sections-backdrop";
